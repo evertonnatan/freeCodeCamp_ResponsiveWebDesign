@@ -1,0 +1,48 @@
+<!-- Compreender unidades absolutas versus relativas
+Todos os últimos desafios definem a margem ou preenchimento de um elemento com pixels ( px). Pixels são um tipo de unidade de comprimento, que diz ao navegador como dimensionar ou espaçar um item. Além disso px, o CSS tem várias opções de unidades de comprimento diferentes que você pode usar.
+
+Os dois tipos principais de unidades de comprimento são absolutos e relativos. As unidades absolutas estão vinculadas às unidades físicas de comprimento. Por exemplo, ine mmreferem-se a polegadas e milímetros, respectivamente. As unidades de comprimento absoluto aproximam-se da medida real em uma tela, mas existem algumas diferenças dependendo da resolução da tela.
+
+Unidades relativas, como emou rem, são relativas a outro valor de comprimento. Por exemplo, emé baseado no tamanho da fonte de um elemento. Se você usá-lo para definir a font-sizepropriedade em si, é relativo ao pai font-size.
+
+Nota: Existem várias opções de unidades relativas que estão vinculadas ao tamanho da janela de visualização. Eles são abordados na seção Princípios de design da Web responsivo.
+
+Adicione uma padding propriedade ao elemento com classe red-boxe defina-a como 1.5em. -->
+
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+    padding:1.5em;
+
+  }
+
+  .green-box {
+    background-color: green;
+    margin: 20px 40px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
